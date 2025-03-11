@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart дүкен - Бастапқы бет</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            overflow: hidden; /* Төмендегі прокруткадан арылу үшін */
+        }
+
+        .landing-container {
+            position: relative;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .landing-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Суретті толық экранды етіп көрсету */
+        }
+
+        .landing-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 64px; /* Үлкен әріптер */
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .shop-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 24px; /* Батырманың үлкен болуы */
+            text-transform: uppercase; /* Батырманың барлық әріптерін үлкен ету */
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .shop-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-container">
+        <img src="https://i.ytimg.com/vi/Xc17Dk0sbBI/maxresdefault.jpg" alt="Smart дүкен" class="landing-image">
+        <div class="landing-text"> SMART ДҮКЕНГЕ</button>
+        <a href="index.html">
+            <button class="shop-button">ДҮКЕНГЕ ӨТУ</button>
+        </a>
+    </div>
+</body>
+</html>

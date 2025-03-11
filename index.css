@@ -1,0 +1,386 @@
+/* Жалпы стильдер */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Негізгі бөлім */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+}
+
+.product-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.buy-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #218838;
+}
+
+/* Корзина */
+#cart-section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+}
+
+#cart-section ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+#cart-section li {
+    margin-bottom: 0.5rem;
+}
+
+#total-price {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+#checkout {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+#checkout:hover {
+    background-color: #0056b3;
+}
+
+/* Байланыс бөлімі */
+#contact form {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form label {
+    font-size: 1rem;
+}
+
+#contact form input, #contact form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+#contact form button:hover {
+    background-color: #0056b3;
+}
+
+#contact p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial {
+    margin-bottom: 1.5rem;
+}
+
+.testimonial p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.testimonial .author {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 3rem;
+}
+.product-card img {
+    width: 200px;  /* немесе басқа мән */
+    height: auto;
+}
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.5s ease, color 0.5s ease, background-image 0.5s ease;
+    font-size: 18px;
+    padding: 20px;
+    background-image: url('https://klike.net/uploads/posts/2019-11/1572778653_2.jpg'); /* Алғашқы сурет */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Қараңғы режим стилі */
+body.dark-mode {
+    background-image: url('https://uprostim.com/wp-content/uploads/2021/04/image057-45-scaled.jpg'); /* Екінші сурет */
+}
+
+/* Батырма стилі */
+#toggle-background {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+/* Мобильді құрылғылар үшін қосымша стильдер */
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center; /* Тауар карточкалары ортаға жиналады */
+    }
+
+    .product-card {
+        width: 80%; /* Мобильді құрылғылар үшін тауарлар кеңірек көрінеді */
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+/* Дене және жалпы стиль */
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    font-size: 18px;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Түнгі режим */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Тауар карталары */
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    width: 23%; /* Десктоп үшін */
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: inline-block;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.buy-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Мобильді құрылғылар үшін */
+@media (max-width: 768px) {
+    /* Тауар карталарының стилі */
+    .product-card {
+        width: 100%; /* Тауар карточкалары толық енімен көрсетіледі */
+    }
+
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Навигация */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    /* Жалпы стильдер */
+    body {
+        padding: 10px;
+    }
+
+    /* Картаны түзеу */
+    #cart-items {
+        padding-left: 20px;
+    }
+
+    #toggle-theme {
+        width: 100%;
+    }
+}

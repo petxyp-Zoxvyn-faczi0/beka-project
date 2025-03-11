@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Төлем сәтті жасалды</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #payment-success {
+            font-size: 100px;
+            color: green;
+        }
+
+        #total-payment {
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="payment-success">✅</div>
+    <p id="total-payment"></p>
+
+    <button class="back-button" onclick="window.location.href = 'index.html';">Негізгі бетке қайту</button>
+
+    <script>
+        // URL параметрінен төлем сомасын алу
+        const urlParams = new URLSearchParams(window.location.search);
+        const totalPayment = urlParams.get('total');
+        document.getElementById('total-payment').textContent = `Төлем сәтті аяқталды `;
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сатылған Тауарлар</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+        }
+
+        .history-item {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin: 10px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .history-item h4 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .history-item p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Сатылған Тауарлар</h1>
+    </header>
+
+    <main id="history-section">
+        <div id="history-items">
+            <!-- Сатылған тауарлар тізімі осы жерге көрсетіледі -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Интернет-Дүкен. Барлық құқықтар қорғалған.</p>
+    </footer>
+
+    <script>
+        // Историядан сатылған тауарлар тізімін алу
+        const historyItems = JSON.parse(localStorage.getItem('history')) || [];
+
+        // Сатылған тауарларды көрсету
+        const historySection = document.getElementById('history-items');
+        historyItems.forEach(item => {
+            const historyDiv = document.createElement('div');
+            historyDiv.classList.add('history-item');
+            historyDiv.innerHTML = `
+                <h4>${item.name}</h4>
+                <p>Бағасы: ${item.price}</p>
+                <p>Күні: ${item.date}</p>
+            `;
+            historySection.appendChild(historyDiv);
+        });
+    </script>
+</body>
+</html>
